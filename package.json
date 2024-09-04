@@ -1,0 +1,28 @@
+{
+    "name": "@hyperflake/http-errors",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/src/index.js",
+    "types": "build/src/index.d.ts",
+    "scripts": {
+        "build": "npx tsc --p ./tsconfig.build.json",
+        "prepublishOnly": "npm run build",
+        "npmPublish": "npm publish --access public"
+    },
+    "files": [
+        "*.md",
+        "build"
+    ],
+    "keywords": [
+        "nodejs",
+        "errors",
+        "http",
+        "http-errors"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.12.7",
+        "typescript": "^5.4.5"
+    }
+}
